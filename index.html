@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/2f91a607fe.js" crossorigin="anonymous"></script>
+    
     <title>PRAYNON</title>
     <meta name="description" content="nft trpg gmae">
     
@@ -17,30 +17,31 @@
     <link rel="icon" type="image/png" href="img/ccss.png" />
     
     <link rel="stylesheet"href="style.css" />
-    <script src="main.js" defer></script>
     
+    <script src="https://kit.fontawesome.com/2f91a607fe.js" crossorigin="anonymous"></script>
+    <script src="main.js" defer></script>
 </head>
 
 <body>
   
     <!--navbar-->
- <nav id="navbar">
+  <nav id="navbar">
     <div class="navbar__logo">
         <a href="#">PRAYNON</a>
     </div>
     <div class="navbar__menu">
         <ul class="navbar__menu">
-            <li class="navbar__menu__item">HOME</li>
-            <li class="navbar__menu__item">ABOUT</li>
-            <li class="navbar__menu__item">Skills</li>
-            <li class="navbar__menu__item">MY work</li>
-            <li class="navbar__menu__item">TESTWF</li>
-            <li class="navbar__menu__item">Contect</li>
+          <li class="navbar__menu__item" data-link="#home">Home</li>
+          <li class="navbar__menu__item" data-link="#getcard">GetCard</li>
+          <li class="navbar__menu__item" data-link="#info">Info</li>
+          <li class="navbar__menu__item" data-link="#work">HowToPlay</li>
+          <li class="navbar__menu__item" data-link="#testimonials">Testimonial</li>
+          <li class="navbar__menu__item" data-link="#contact">Contact</li>
         </ul>
     </div>
- </nav>
- <!--main-->
- <section id="home">
+  </nav>
+  <!--home-->
+  <section id="home">
     <img
     src="img/8.png"
     alt="NFT_CARD"
@@ -63,31 +64,32 @@
        이 카드들로 무엇을 할지는 전부 당신의 자유입니다.
        
     </h2>
+  </section>
   
 
     <!-- getcard -->
-      <section id="GetCard" class="section">
+      <section id="getcard" class="section">
         <div class="row">
           <div class="column1">
             <div class="card1">
+              <br>
               <img src="img/frame black.png" style="width:150px;height:auto;padding-top: 10px;">
               <h1>GET PRAYNON CARD</h1>
-             
               <p>PRAYNON카드를 얻는 방법은 다양합니다.<br>
               이미 만들어진 카드를 얻을 수도 있고<br>
               새로운 카드를 생성할수도 있습니다.
-              
-              
               </p>
 
-              <a href="https://opensea.io/collection/demonftcardgame" target="_blank" title="Button border orange" class="button btnFloat btnOrange"></a>
+              <a href="https://opensea.io/collection/demonftcardgame" target="_blank" 
+                class="btnbtn">Go To Opensea </a>
             </div>
           </div>
         </div>
         </section>
-      <!-- 유일무이 -->
-      <section id="only" class="section">
+      <!-- info -->
+      <section id="info" class="section">
         <div class="section__container">
+          <br>
           <h1>The One And Only</h1>
           <p>
           PRAYNON 카드는 유일무이합니다.<br>
@@ -155,105 +157,43 @@
           </div>
         </div>
         </section>
-      <!-- Work -->
+      <!-- HOWTOPLAY -->
       <section id="work" class="section">
+
        <div class="section__container">
-        <h1>My work</h1>
-        <h3>Projects</h3>
+        <h1><br></h1>
+        <h1>How To Play</h1>
+        
         <div class="work__categories">
-          <button class="category__btn selected" data-filter="*">
-            All <span class="category__count">8</span>
+          <button class="category__btn selected" data-filter="TCG">
+            TCG
           </button>
-          <button class="category__btn" data-filter="front-end">
-            Front-end <span class="category__count">3</span>
+          <button class="category__btn" data-filter="TRPG">
+            TRPG
           </button>
           <button class="category__btn" data-filter="back-end">
-            Back-end <span class="category__count">3</span>
+            Back-end 
           </button>
-          <button class="category__btn" data-filter="mobile">
-            Mobile <span class="category__count">2</span>
-          </button>
+          
         </div>
-        <div class="work__projects">
-          <a href="" class="project" target="blank" data-type="front-end">
-            <img
-              src="imgs/projects/youtube.png"
-              alt="Youtube"
-              class="project__img"
-            />
-            <div class="project__description">
-              <h3>Youtube Site</h3>
-              <span>Clone coding with HTML, CSS</span>
+        <section id="GetCard" class="section" data-type="TRPG">
+          <div class="row">
+            <div class="column1">
+              <div class="card1">
+                <img src="img/frame black.png" style="width:150px;height:auto;padding-top: 10px;">
+                <h1>GET PRAYNON CARD</h1>
+               
+                <p>PRAYNON플레이 방법은 다양합니다.<br>
+                이미 만들어진 카드를 얻을 수도 있고<br>
+                새로운 카드를 생성할수도 있습니다.
+                </p>
+              </div>
             </div>
-          </a>
-          <a
-            href="https://github.com/dream-ellie/responsive-nav-bar"
-            class="project"
-            data-type="front-end"
-            target="blank"
-          >
-            <img
-              class="project__img"
-              src="imgs/projects/navbar.png"
-              alt="navbar"
-            />
-            <div class="project__description">
-              <h3>Responsive Navbar</h3>
-              <span>HTML, CSS with media query</span>
-            </div>
-          </a>
-          <a
-            href="https://github.com/dream-ellie/responsive-nav-bar"
-            class="project"
-            data-type="front-end"
-            target="blank"
-          > 
-            <img class="project__img" src="imgs/projects/game.png" alt="navbar" />
-            <div class="project__description">
-              <h3>Shopping mall game</h3>
-              <span>HTML, CSS, JavaScript, Json</span>
-            </div>
-          </a>
-          <a href="" class="project" data-type="back-end">
-            <img class="project__img" src="imgs/projects/game.png" alt="" />
-            <div class="project__description">
-              <h3>Project</h3>
-              <span>Explanation</span>
-            </div>
-          </a>
-          <a href="" class="project" data-type="back-end">
-            <img class="project__img" src="imgs/projects/game.png" alt="" />
-            <div class="project__description">
-              <h3>Project</h3>
-              <span>Explanation</span>
-            </div>
-          </a>
-          <a href="" class="project" data-type="mobile">
-            <img class="project__img" src="imgs/projects/game.png" alt="" />
-            <div class="project__description">
-              <h3>Project</h3>
-              <span>Explanation</span>
-            </div>
-          </a>
-          <a href="" class="project" data-type="mobile">
-            <img class="project__img" src="imgs/projects/game.png" alt="" />
-            <div class="project__description">
-              <h3>Project</h3>
-              <span>Explanation</span>
-            </div>
-          </a>
-          <a href="" class="project" data-type="mobile">
-            <img class="project__img" src="imgs/projects/game.png" alt="" />
-            <div class="project__description">
-              <h3>Project</h3>
-              <span>Explanation</span>
-            </div>
-          </a>
-        </div>
-       </div>
+          </div>
+          </section>
       </section>
   
-      <!-- Testimonials -->
+      <!-- Testimonials 
       <section id="testimonials" class="section">
      <div class="section__container">
       <h1>Testimonials</h1>
@@ -267,10 +207,7 @@
           />
           <div class="testimonial__speech-bubble">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
-              fuga libero nulla eveniet aperiam laborum, quis provident
-              quibusdam officiis reprehenderit, placeat neque perspiciatis vero
-              explicabo tempora, dignissimos accusantium inventore ducimus!
+      
             </p>
             <p class="name"><a href="">Ellie</a> / Samsung</p>
           </div>
@@ -278,10 +215,7 @@
         <div class="testimonial">
           <div class="testimonial__speech-bubble">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
-              fuga libero nulla eveniet aperiam laborum, quis provident
-              quibusdam officiis reprehenderit, placeat neque perspiciatis vero
-              explicabo tempora, dignissimos accusantium inventore ducimus!
+             
             </p>
             <p class="name"><a href="">Ellie</a> / Samsung</p>
           </div>
@@ -294,13 +228,13 @@
       </div>  
      </div>
       </section>
-  
+      -->
       <!-- Contact -->
       <section id="contact" class="section">
         <h1 class="contact__title">Let's talk</h1>
-        <h2 class="contact__email">dream.coder.ellie@gmail.com</h2>
+        <h2 class="contact__email">xoele@naver.com</h2>
         <div class="contact__links">
-          <a href="https://github.com/dream-ellie" target="_blank">
+          <a href="https://github.com/minsugu/NFT_TRPG_TRADING_CARDGAME" target="_blank">
             <i class="fab fa-github"></i>
           </a>
           <a href="#" target="_blank">
@@ -308,14 +242,11 @@
           </a>
         </div>
         <p class="contact__rights">
-          2020 Dream Coding Ellie - All rights reserved
+         
         </p>
       </section>
   
-      <!-- Arrow up -->
-      <button class="arrow-up">
-        <i class="fas fa-arrow-up"></i>
-      </button>
+      
     </body>
   </html>
   
