@@ -79,9 +79,9 @@ workBtnContainer.addEventListener('click', (e) => {
     projects.forEach((project) => {
       console.log(project.dataset.type);
       if (filter === '*' || filter === project.dataset.type) {
-        project.classList.remove('visible');
+        project.classList.remove('invisible');
       } else {
-        project.classList.add('visible');
+        project.classList.add('invisible');
       }
     });
     projectContainer.classList.remove('anim-out');
