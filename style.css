@@ -118,46 +118,57 @@
     line-height: 40px;
   }
   
-  
-  /* Navbar */
-  #navbar {
-    position: fixed;
+
+  #infobar{
+    position: relative;
+    width: 30%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding:3px;
+    background-color:var(--color-sexyblack);
+    
+  }
+  /* mainbar */
+  #mainbar {
+    position: relative;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
     padding: 5px;
-    background-color:#161619;
+    background-color:var(--color-sexyblack);
+    
   }
   
-  .navbar__logo {
+  .mainbar__logo {
     font-size: var(--font-medium);
     font-weight: var(--weight-semi-bold);
     color: white;
   }
   
-  .navbar__menu {
+  .mainbar__menu {
     display: flex;
   }
   
-  .navbar__menu__item {
+  .mainbar__menu__item {
     padding: 8px 12px;
     margin: 0 4px;
     color: var(--color-white);
     cursor: pointer;
   }
   
-  .navbar__menu__item.active {
+  .mainbar__menu__item.active {
     border: 1px solid white;
     border-radius: var(--size-border-radius);
   }
   
-  .navbar__menu__item:hover {
+  .mainbar__menu__item:hover {
     background-color: var(--color-light-grey);
     border-radius: var(--size-border-radius);
   }
   
-  .navbar__toggle-btn {
+  .mainbar__toggle-btn {
     position: absolute; 
     top: 24px;
     right: 32px;
@@ -165,6 +176,7 @@
     color: var(--color-white);
     display: none;
   }
+  
   
   /* home */
   #home {
@@ -264,6 +276,53 @@
     border-radius: 40px;
     padding-bottom: 15px;
     min-height: 600px;
+  }
+  /* Navbar */
+  #navbar {
+    position: sticky;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: centes;
+    padding: 5px;
+    background-color:var(--color-black);
+    top: 0;
+  }
+  
+  .navbar__logo {
+    font-size: var(--font-medium);
+    font-weight: var(--weight-semi-bold);
+    color: white;
+  }
+  
+  .navbar__menu {
+    display: flex;
+  }
+  
+  .navbar__menu__item {
+    padding: 8px 12px;
+    margin: 0 4px;
+    color: var(--color-white);
+    cursor: pointer;
+  }
+  
+  .navbar__menu__item.active {
+    border: 1px solid white;
+    border-radius: var(--size-border-radius);
+  }
+  
+  .navbar__menu__item:hover {
+    background-color: var(--color-light-grey);
+    border-radius: var(--size-border-radius);
+  }
+  
+  .navbar__toggle-btn {
+    position: absolute; 
+    top: 24px;
+    right: 32px;
+    font-size: 24px;
+    color: var(--color-white);
+    display: none;
   }
   
   /* info */
